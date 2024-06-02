@@ -1,0 +1,18 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.hover_mouse_for_label_light {
+	-fx-text-fill: #caf0f8;
+}
+
+.hover_mouse_for_label_light:hover {
+	-fx-text-fill: #90e0ef;
+}
+
+.hover_mouse_for_label_dark {
+	-fx-text-fill: #03045e;
+}
+
+.hover_mouse_for_label_dark:hover {
+	-fx-text-fill: #0077b6;
+}
+

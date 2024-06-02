@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="907.2" style="-fx-background-color: #03045e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PersonalController">
+   <children>
+      <StackPane prefWidth="200.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #00b4d8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Information" textFill="#caf0f8">
+               <font>
+                  <Font name="Open Sans Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <AnchorPane fx:id="infor_user_container" layoutY="62.4" prefWidth="907.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #00b4d8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="52.2">
+         <children>
+            <AnchorPane fx:id="infor_left" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label contentDisplay="CENTER" text="Username:" textFill="#caf0f8" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Open Sans Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="username_value" contentDisplay="CENTER" layoutX="159.0" textFill="#caf0f8" AnchorPane.leftAnchor="158.2" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Open Sans Regular" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutY="48.0" text="Email:" textFill="#caf0f8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.2">
+                     <font>
+                        <Font name="Open Sans Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="email_value" contentDisplay="CENTER" layoutX="159.0" layoutY="32.0" textFill="#caf0f8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="158.2" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.2">
+                     <font>
+                        <Font name="Open Sans Regular" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="infor_right" layoutX="488.0" layoutY="14.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label contentDisplay="CENTER" text="Birthday:" textFill="#caf0f8" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Open Sans Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="birth_value" contentDisplay="CENTER" layoutX="159.0" textFill="#caf0f8" AnchorPane.leftAnchor="158.2" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Open Sans Regular" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutY="48.0" text="Nationality:" textFill="#caf0f8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.2">
+                     <font>
+                        <Font name="Open Sans Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nationality_value" contentDisplay="CENTER" layoutX="159.0" layoutY="32.0" textFill="#caf0f8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="158.2" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.2">
+                     <font>
+                        <Font name="Open Sans Regular" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <StackPane layoutX="349.0" layoutY="103.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="93.6">
+               <children>
+                  <Label fx:id="change" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#changeMenu" prefWidth="255.6" style="-fx-padding: 5px; -fx-background-radius: 5px; -fx-background-color: #00b4d8;" text="Change" textAlignment="CENTER" textFill="#caf0f8">
+                     <font>
+                        <Font name="Open Sans Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </StackPane>
+         </children>
+         <padding>
+            <Insets bottom="15.0" />
+         </padding>
+      </AnchorPane>
+      <StackPane fx:id="your_game_container" style="-fx-background-color: #03045e;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="259.4">
+         <children>
+            <FlowPane fx:id="list_game_container" hgap="26.56" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="854.08" StackPane.alignment="TOP_LEFT" />
+         </children>
+      </StackPane>
+      <Label contentDisplay="CENTER" layoutX="14.0" layoutY="221.0" prefWidth="96.0" text="Your game:" textFill="#caf0f8" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="220.8">
+         <font>
+            <Font name="Open Sans Regular" size="18.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="15.0" />
+   </padding>
+</AnchorPane>

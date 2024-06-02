@@ -1,0 +1,44 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.backgroundColor{
+    -fx-background-color: linear-gradient(to bottom, #03045e, #0077b6);
+}
+.borderColor {
+	-fx-border-color: linear-gradient(to right, #03045e, #0077b6);
+}
+
+.fieldTextColor {
+	-fx-text-fill: #ffffff;
+}
+
+.lightTextgradient {
+	-fx-text-fill: linear-gradient(to bottom, #90e0ef, #caf0f8);
+}
+
+.darkTextgradient {
+	-fx-text-fill: linear-gradient(to bottom, #03045e, #0077b6);
+}
+
+.oneBackgroundColor{
+    -fx-background-color: linear-gradient(to bottom, #0077b6, #00b4d8);
+}
+
+.twoBackgroundColor {
+	-fx-background-color: linear-gradient(to bottom, #00b4d8, #90e0ef);
+}
+
+.threeBackgroundColor {
+	-fx-background-color: linear-gradient(to bottom, #90e0ef, #caf0f8);
+}
+
+.rounded-pane {
+    -fx-border-radius: 10px;
+    -fx-border-width: 2px;
+}
+
+/*
+ * #03045e
+ * #0077b6
+ * #00b4d8
+ * #90e0ef
+ * #caf0f8
+ */

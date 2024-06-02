@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="see_game_container" minHeight="-Infinity" minWidth="-Infinity" prefWidth="907.2" style="-fx-background-color: #03045e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SeeAllController">
+   <children>
+      <FlowPane fx:id="list_game_container" hgap="26.56" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="854.08" StackPane.alignment="TOP_LEFT" />
+   </children>
+   <padding>
+      <Insets bottom="13.0" top="13.0" />
+   </padding>
+</StackPane>

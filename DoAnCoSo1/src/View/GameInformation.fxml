@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="page_game_infor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="907.2" style="-fx-background-color: #03045e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GameInformationController">
+   <children>
+      <Pane fx:id="image_game_pane" prefHeight="337.5" prefWidth="600.2" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="infor_container" prefHeight="337.5" prefWidth="292.0" style="-fx-border-color: #00b4d8; -fx-border-radius: 5px;" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="game_name_pane" layoutX="20.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="209.0" style="-fx-border-width: 0 0 2 0; -fx-border-color: #00b4d8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fx:id="game_name" fill="#caf0f8" layoutY="20.0392578125" strokeType="OUTSIDE" strokeWidth="0.0" text="Game name" wrappingWidth="259.8" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Open Sans Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </AnchorPane>
+            <Text fx:id="description_game" fill="#caf0f8" layoutX="15.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="259.8" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="215.0">
+               <font>
+                  <Font name="Open Sans Regular" size="14.0" />
+               </font>
+            </Text>
+            <Label layoutX="14.0" layoutY="194.0" text="Description:" textFill="#caf0f8" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="180.0">
+               <font>
+                  <Font name="Open Sans Bold" size="14.0" />
+               </font>
+            </Label>
+            <FlowPane fx:id="tag_genre_container" hgap="5.0" layoutX="16.8" layoutY="96.8" prefWidth="207.0" prefWrapLength="210.0" vgap="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="96.0" />
+            <Label layoutX="25.0" layoutY="332.0" text="Release Date:" textFill="#caf0f8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font name="Open Sans Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="release_date" layoutX="121.0" layoutY="390.0" textFill="#caf0f8" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Open Sans Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="16.0" layoutY="298.0" text="Developer:" textFill="#caf0f8" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font name="Open Sans Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="developer" layoutX="201.0" layoutY="293.0" textFill="#caf0f8" AnchorPane.bottomAnchor="35.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Open Sans Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane fx:id="update_container" layoutX="15.199999809265137" layoutY="392.0" style="-fx-border-color: #00b4d8; -fx-border-width: 1 0 1 0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ScrollPane fx:id="scroll_pane_update" fitToWidth="true" hbarPolicy="NEVER" prefWidth="808.0" styleClass="non_border_scroll_pane" stylesheets="@../Model/style.css" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="0.0">
+               <content>
+                  <HBox fx:id="update_list" maxHeight="-Infinity" prefWidth="200.0" spacing="13.0">
+                     <padding>
+                        <Insets bottom="13.0" left="13.0" right="13.0" top="13.0" />
+                     </padding>
+                  </HBox>
+               </content>
+               <effect>
+                  <Lighting diffuseConstant="1.19" specularExponent="19.63" surfaceScale="0.77">
+                     <bumpInput>
+                        <Shadow>
+                           <color>
+                              <Color opacity="0.3677811324596405" />
+                           </color></Shadow>
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </ScrollPane>
+            <Label fx:id="next" alignment="CENTER" layoutX="836.8000001907349" onMouseClicked="#nextUpdates" prefHeight="230.4" prefWidth="40.0" style="-fx-background-color: #90e0ef;" stylesheets="@../Model/style.css" text="&gt;" textAlignment="CENTER" textFill="#caf0f8" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Open Sans Bold" size="36.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="hover_pointer" />
+                  <String fx:value="background_radius" />
+               </styleClass>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="15.0" top="15.0" />
+         </padding>
+      </AnchorPane>
+      <Label fx:id="last_update" contentDisplay="CENTER" layoutX="14.0" layoutY="361.0" prefHeight="20.0" prefWidth="300.0" text="Last update:" textFill="#caf0f8" AnchorPane.leftAnchor="0.0">
+         <font>
+            <Font name="Open Sans Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="15.0" layoutY="669.0" textFill="#caf0f8">
+         <font>
+            <Font name="Open Sans Bold" size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="add_fund_container" layoutX="27.0" layoutY="646.0" style="-fx-border-color: #00b4d8; -fx-border-width: 0 0 1 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutY="42.0" text="Operating system:" textFill="#caf0f8" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Open Sans Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="103.0" text="RAM:" textFill="#caf0f8" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="70.0">
+               <font>
+                  <Font name="Open Sans Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutY="71.0" text="Capacity:" textFill="#caf0f8" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="35.0">
+               <font>
+                  <Font name="Open Sans Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="add_carts" alignment="CENTER" layoutX="554.0" layoutY="18.0" onMouseClicked="#addCart" prefHeight="54.0" prefWidth="292.0" style="-fx-background-color: #90e0ef;" stylesheets="@../Model/style.css" text="ADD CART" textFill="#caf0f8" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="52.0">
+               <font>
+                  <Font name="Open Sans Bold" size="28.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="hover_pointer" />
+                  <String fx:value="background_radius" />
+               </styleClass>
+            </Label>
+            <Label fx:id="list_os" layoutX="173.0" layoutY="35.0" textFill="#caf0f8" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Open Sans Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="capacity_value" layoutX="173.0" layoutY="70.0" textFill="#caf0f8" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="35.0">
+               <font>
+                  <Font name="Open Sans Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="ram_value" layoutX="173.0" layoutY="105.0" textFill="#caf0f8" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="70.0">
+               <font>
+                  <Font name="Open Sans Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label prefWidth="114.0" text="Price:" textFill="#caf0f8" AnchorPane.rightAnchor="179.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Open Sans Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="cost" alignment="CENTER_RIGHT" textFill="#caf0f8" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Open Sans Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="15.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="15.0" top="15.0" />
+   </padding>
+</AnchorPane>

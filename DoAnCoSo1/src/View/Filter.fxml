@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="filter_page" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="907.2" style="-fx-background-color: #03045e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FilterController">
+   <children>
+      <AnchorPane fx:id="filter_item_container" layoutX="15.0" layoutY="109.0" prefWidth="876.0" style="-fx-padding: 0 0 15 0; -fx-border-width: 0 0 1 0; -fx-border-color: #00b4d8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
+         <children>
+            <AnchorPane fx:id="item_left" layoutY="15.199999809265137" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label prefHeight="30.0" style="-fx-text-fill: #caf0f8;" text="Release date:" textFill="#caf0f8" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Open Sans Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="release_date_value" layoutX="156.8000030517578" onAction="#changeDate" prefHeight="30.0" prefWidth="234.0" style="-fx-background-radius: 5px;" AnchorPane.leftAnchor="141.4" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ComboBox>
+                  <Label layoutY="44.80000019073486" prefHeight="30.0" style="-fx-text-fill: #caf0f8;" text="Genres:" textFill="#caf0f8" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="45.0">
+                     <font>
+                        <Font name="Open Sans Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="genres_value" layoutX="156.8000030517578" layoutY="44.80000019073486" onAction="#changeGenres" prefHeight="30.0" prefWidth="234.0" style="-fx-background-radius: 5px;" AnchorPane.leftAnchor="141.4" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ComboBox>
+                  <Label layoutY="89.60000324249268" prefHeight="30.0" style="-fx-text-fill: #caf0f8;" text="Capacity:" textFill="#caf0f8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="90.0">
+                     <font>
+                        <Font name="Open Sans Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="capacity_value" layoutX="156.8000030517578" layoutY="89.60000324249268" onAction="#changeCapacity" prefHeight="30.0" prefWidth="234.0" style="-fx-background-radius: 5px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="141.4" AnchorPane.rightAnchor="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ComboBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="item_right" layoutX="445.6000061035156" layoutY="15.199999809265137" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label prefHeight="30.0" style="-fx-text-fill: #caf0f8;" text="Operating System:" textFill="#caf0f8" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Open Sans Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="os_value" layoutX="195.60000610351562" onAction="#changeOS" prefHeight="30.0" prefWidth="234.0" style="-fx-background-radius: 5px;" AnchorPane.leftAnchor="190.2" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ComboBox>
+                  <Label layoutY="45.80000019073486" prefHeight="30.0" style="-fx-text-fill: #caf0f8;" text="Price:" textFill="#caf0f8" AnchorPane.leftAnchor="0.0">
+                     <font>
+                        <Font name="Open Sans Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="price_value" layoutX="195.60000610351562" layoutY="44.80000019073486" onAction="#changePrice" prefHeight="30.0" prefWidth="234.0" style="-fx-background-radius: 5px;" AnchorPane.leftAnchor="190.2" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ComboBox>
+                  <Label layoutY="91.20000171661377" prefHeight="30.0" style="-fx-text-fill: #caf0f8;" text="Ram:" textFill="#caf0f8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+                     <font>
+                        <Font name="Open Sans Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="ram_value" layoutX="195.60000610351562" layoutY="89.60000324249268" onAction="#changeRam" prefHeight="30.0" prefWidth="234.0" style="-fx-background-radius: 5px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="190.2" AnchorPane.rightAnchor="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ComboBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="filter_game_container" style="-fx-background-color: #03045e;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="226.8">
+         <children>
+            <FlowPane fx:id="list_game_container" hgap="26.56" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="854.08" StackPane.alignment="TOP_LEFT" />
+         </children>
+      </StackPane>
+      <TextField fx:id="search_value" layoutY="19.0" prefHeight="45.0" prefWidth="622.0" promptText="Search" style="-fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-font-size: 18px; -fx-font-family: Open Sans;" styleClass="nonOutline" stylesheets="@../Model/style.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="Open Sans Bold" size="24.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

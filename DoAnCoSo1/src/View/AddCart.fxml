@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cart_page" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="673.0" prefWidth="907.0" style="-fx-background-color: #03045e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddCartController">
+   <children>
+      <ScrollPane fx:id="scrollCart" hbarPolicy="NEVER" style="-fx-border-color: #0077b6; -fx-border-width: 0 0 2 0;" stylesheets="@../Model/style.css" vbarPolicy="NEVER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <VBox fx:id="list_game_container" />
+         </content>
+         <styleClass>
+            <String fx:value="nonOutline" />
+            <String fx:value="non_border_scroll_pane" />
+         </styleClass>
+      </ScrollPane>
+      <AnchorPane fx:id="your_money_container" layoutY="525.5999755859375" AnchorPane.leftAnchor="0.0">
+         <children>
+            <Label fx:id="yourMone" prefHeight="40.0" text="Your Money:" textFill="#caf0f8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Open Sans Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="money_value" layoutX="128.8000030517578" prefHeight="40.0" textFill="#caf0f8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="128.6" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Open Sans Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="bill_container" layoutX="330.3999938964844" layoutY="525.5999755859375" AnchorPane.leftAnchor="330.0">
+         <children>
+            <Label prefHeight="40.0" text="Bill:" textFill="#caf0f8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Open Sans Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="bill_value" layoutX="48.800018310546875" prefHeight="40.0" text="0.00$" textFill="#caf0f8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="49.4" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Open Sans Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="pay_button" alignment="CENTER" layoutX="708.0" layoutY="526.4" onMouseClicked="#pay" prefHeight="40.0" prefWidth="260.0" style="-fx-background-color: #00b4d8; -fx-background-radius: 5px;" text="PAY" textAlignment="CENTER" textFill="#caf0f8" AnchorPane.leftAnchor="660.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Open Sans Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

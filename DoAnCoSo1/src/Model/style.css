@@ -1,0 +1,54 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.hover_pointer:hover {
+	-fx-cursor: hand;
+}
+
+.hover_background:hover {
+	-fx-background-color: #0077b6;
+	-fx-text-fill: #caf0f8;
+	}
+
+
+.non_border_scroll_pane {
+	
+	-fx-background-color:transparent;
+	-fx-background-insets: 0;
+	-fx-padding: 0;
+	-fx-border-width: 0;
+}
+
+.scroll-pane > .viewport  { -fx-background-color: #03045e;}
+
+.hover_game {
+	-fx-background-color:  #00b4d8;
+}
+
+.hover_game:hover {
+	-fx-background-color:  #0077b6;
+}
+
+.background_radius {
+	-fx-background-radius: 5px;
+}
+
+.image_view_radius_top_right_left{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5 5 0 0; 
+}
+
+.nonOutline {
+	-fx-underline: false;   
+    -fx-border-width: 0 0 0 0; 
+    -fx-border-color: transparent;
+}
+
+
+/*
+ *
+.shadow:hover {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);
+}
+ */

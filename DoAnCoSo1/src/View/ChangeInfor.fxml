@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="907.0" style="-fx-background-color: #03045e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ChangeInforController">
+   <children>
+      <StackPane layoutX="10.0" layoutY="10.0" prefWidth="200.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #00b4d8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Change" textFill="#caf0f8">
+               <font>
+                  <Font name="Open Sans Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="7.0" />
+         </padding>
+      </StackPane>
+      <AnchorPane fx:id="change_container" layoutX="14.0" layoutY="70.4" prefWidth="907.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="69.2">
+         <children>
+            <AnchorPane fx:id="infor_container" prefWidth="431.0" style="-fx-border-color: #00b4d8; -fx-border-radius: 5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <StackPane prefWidth="419.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #00b4d8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="Change Information" textFill="#caf0f8">
+                           <font>
+                              <Font name="Open Sans Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                  </StackPane>
+                  <Label contentDisplay="CENTER" layoutX="1.0" layoutY="53.0" prefHeight="35.0" text="Username:" textFill="#caf0f8" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="56.6">
+                     <font>
+                        <Font name="Open Sans Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="username_value" layoutX="113.0" layoutY="60.8" prefHeight="35.0" prefWidth="288.0" style="-fx-background-radius: 5px; -fx-text-fill: #03045e;" styleClass="nonOutline" stylesheets="@../Model/style.css" AnchorPane.leftAnchor="122.2" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="56.6">
+                     <font>
+                        <Font name="Open Sans Regular" size="14.0" />
+                     </font></TextField>
+                  <Label contentDisplay="CENTER" layoutX="16.0" layoutY="121.0" prefHeight="35.0" text="Email:" textFill="#caf0f8" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="106.6">
+                     <font>
+                        <Font name="Open Sans Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="email_value" layoutX="139.0" layoutY="121.0" prefHeight="35.0" prefWidth="288.0" style="-fx-background-radius: 5px; -fx-text-fill: #03045e;" styleClass="nonOutline" stylesheets="@../Model/style.css" AnchorPane.leftAnchor="122.2" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="106.6">
+                     <font>
+                        <Font name="Open Sans Regular" size="14.0" />
+                     </font></TextField>
+                  <Label contentDisplay="CENTER" layoutX="16.0" layoutY="184.0" prefHeight="35.0" text="Birthday:" textFill="#caf0f8" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="156.6">
+                     <font>
+                        <Font name="Open Sans Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="date_value" layoutX="139.0" layoutY="184.0" prefHeight="35.0" prefWidth="213.0" style="-fx-background-radius: 5px;" AnchorPane.leftAnchor="122.2" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="156.6" />
+                  <Label contentDisplay="CENTER" layoutX="18.0" layoutY="252.0" prefHeight="35.0" text="Nationality:" textFill="#caf0f8" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="206.6">
+                     <font>
+                        <Font name="Open Sans Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="nationality_value" layoutX="141.0" layoutY="245.0" prefHeight="35.0" prefWidth="276.0" style="-fx-background-radius: 5px;" AnchorPane.leftAnchor="122.2" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="206.6" />
+                  <StackPane layoutX="96.0" layoutY="306.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="256.6">
+                     <children>
+                        <Label fx:id="confirm_change_infor" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#change_information" prefWidth="114.0" style="-fx-background-color: #00b4d8; -fx-background-radius: 5px;" text="Confirm" textFill="#caf0f8">
+                           <font>
+                              <Font name="Open Sans Bold" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="8.0" right="8.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </StackPane>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="8.0" />
+               </padding>
+            </AnchorPane>
+            <AnchorPane fx:id="pass_container" layoutX="461.0" prefWidth="431.0" style="-fx-border-color: #00b4d8; -fx-border-radius: 5;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <StackPane prefWidth="419.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #00b4d8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="Change password" textFill="#caf0f8">
+                           <font>
+                              <Font name="Open Sans Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                  </StackPane>
+                  <Label contentDisplay="CENTER" layoutX="1.0" layoutY="53.0" prefHeight="35.0" text="Old password:" textFill="#caf0f8" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="56.6">
+                     <font>
+                        <Font name="Open Sans Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="16.0" layoutY="121.0" prefHeight="35.0" text="New password:" textFill="#caf0f8" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="106.6">
+                     <font>
+                        <Font name="Open Sans Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="16.0" layoutY="184.0" prefHeight="35.0" text="Cofirm password:" textFill="#caf0f8" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="156.6">
+                     <font>
+                        <Font name="Open Sans Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <StackPane layoutX="96.0" layoutY="306.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="256.6">
+                     <children>
+                        <Label fx:id="confirm_change_pass" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#change_password" prefWidth="114.0" style="-fx-background-color: #00b4d8; -fx-background-radius: 5px;" text="Confirm" textFill="#caf0f8">
+                           <font>
+                              <Font name="Open Sans Bold" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="8.0" right="8.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <PasswordField fx:id="old_pass_value" layoutX="206.0" layoutY="68.0" prefHeight="35.0" style="-fx-background-radius: 5px; -fx-text-fill: #03045e;" AnchorPane.leftAnchor="172.6" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="56.6">
+                     <font>
+                        <Font name="Open Sans Regular" size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <PasswordField fx:id="new_pass_value" layoutX="270.0" layoutY="114.0" prefHeight="35.0" style="-fx-background-radius: 5px; -fx-text-fill: #03045e;" AnchorPane.leftAnchor="172.6" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="106.6">
+                     <font>
+                        <Font name="Open Sans Regular" size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <PasswordField fx:id="confirm_pass_value" layoutX="280.0" layoutY="158.0" prefHeight="35.0" style="-fx-background-radius: 5px; -fx-text-fill: #03045e;" AnchorPane.leftAnchor="172.6" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="156.6">
+                     <font>
+                        <Font name="Open Sans Regular" size="14.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="8.0" />
+               </padding>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="15.0" />
+   </padding>
+</AnchorPane>

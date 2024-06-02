@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="905.0" style="-fx-background-color: #03045e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SliderImageController">
+   <children>
+      <Pane fx:id="image_container" onMouseClicked="#show_game" prefHeight="400.0" prefWidth="905.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Pane>
+      <AnchorPane layoutX="377.6000061035156" layoutY="372.8" prefHeight="77.0" prefWidth="265.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="415.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="57.0" layoutY="-1.0" prefHeight="50.0" prefWidth="150.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Circle fx:id="image_1" radius="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: #caf0f8;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Circle>
+                  <Circle fx:id="image_2" radius="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: #caf0f8;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Circle>
+                  <Circle fx:id="image_3" radius="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: #caf0f8;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Circle>
+                  <Circle fx:id="image_4" radius="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: #caf0f8;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Circle>
+                  <Circle fx:id="image_5" radius="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: #caf0f8;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Circle>
+               </children>
+            </HBox>
+            <Label fx:id="back" alignment="CENTER" layoutX="37.0" onMouseClicked="#back_images" prefHeight="42.0" prefWidth="35.0" style="-fx-background-color: #90e0ef;" styleClass="background_radius" stylesheets="@../Model/style.css" text="&lt;" textFill="#caf0f8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Open Sans Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="next" alignment="CENTER" layoutX="193.0" layoutY="-9.0" onMouseClicked="#next_images" prefHeight="42.0" prefWidth="35.0" style="-fx-background-color: #90e0ef;" styleClass="background_radius" stylesheets="@../Model/style.css" text="&gt;" textFill="#caf0f8" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Open Sans Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="15.0" top="15.0" />
+   </padding>
+</AnchorPane>

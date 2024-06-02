@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="game_container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#Game_Pane" prefHeight="258.4" prefWidth="193.2" style="-fx-background-color: #00b4d8;" styleClass="hover_pointer" stylesheets="@../Model/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GameController">
+   <children>
+      <Pane fx:id="image_pane" prefHeight="130.0" prefWidth="193.0" style="-fx-background-radius: 5 5 0 0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label fx:id="game_name" alignment="TOP_LEFT" layoutX="3.0" layoutY="136.0" prefHeight="95.0" prefWidth="184.0" style="-fx-text-fill: #caf0f8;" text="Game name" wrapText="true" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="135.0">
+         <font>
+            <Font name="Open Sans Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="23.0" fitWidth="21.0" layoutX="4.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" style="-fx-text-fill: #0077b6;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0">
+         <image>
+            <Image url="@../Image/save.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="download_turns" layoutX="23.0" layoutY="235.0" prefHeight="20.0" prefWidth="70.0" style="-fx-text-fill: #caf0f8;" text="191" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="26.0">
+         <font>
+            <Font name="Open Sans Regular" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="104.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true" style="-fx-text-fill: #0077b6;" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="76.6">
+         <image>
+            <Image url="@../Image/show.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="view_turns" layoutX="122.0" layoutY="232.0" prefHeight="20.0" prefWidth="66.0" style="-fx-text-fill: #caf0f8;" text="273" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <font>
+            <Font name="Open Sans Regular" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

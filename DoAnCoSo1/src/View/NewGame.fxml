@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="list_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="904.8" style="-fx-background-color: #03045e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NewGameController">
+   <children>
+      <AnchorPane layoutX="15.199999809265137" layoutY="15.199999809265137" style="-fx-border-color: #caf0f8; -fx-border-width: 0 0 1 0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label stylesheets="@../Model/Home.css" text="New Game" textFill="#caf0f8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Open Sans Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="776.0000123977661" onMouseClicked="#see_more" styleClass="hover_mouse_for_label_light" text="See more" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Open Sans Regular" size="16.0" />
+               </font>
+               <stylesheets>
+                  <URL value="@../Model/Home.css" />
+                  <URL value="@../Model/style.css" />
+               </stylesheets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="7.0" />
+         </padding>
+      </AnchorPane>
+      <ScrollPane fx:id="scroll_games" fitToWidth="true" hbarPolicy="NEVER" layoutX="15.199999809265137" layoutY="75.19999694824219" prefWidth="814.4" styleClass="non_border_scroll_pane" stylesheets="@../Model/style.css" vbarPolicy="NEVER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="45.4">
+         <content>
+            <HBox fx:id="game_container" alignment="CENTER_LEFT" prefWidth="200.0" spacing="13.0" style="-fx-background-color: #03045e;">
+               <opaqueInsets>
+                  <Insets left="5.0" right="5.0" />
+               </opaqueInsets>
+            </HBox>
+         </content>
+      </ScrollPane>
+      <Label fx:id="next" alignment="CENTER" contentDisplay="CENTER" layoutX="841.0" layoutY="75.0" onMouseClicked="#next_games" prefHeight="122.3" prefWidth="46.0" style="-fx-background-color: #90e0ef;" stylesheets="@../Model/style.css" text="&gt;" textFill="#caf0f8" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.4">
+         <font>
+            <Font name="Open Sans Bold" size="40.0" />
+         </font>
+         <styleClass>
+            <String fx:value="hover_pointer" />
+            <String fx:value="background_radius" />
+         </styleClass>
+      </Label>
+      <Label fx:id="back" alignment="CENTER" contentDisplay="CENTER" layoutX="843.0" layoutY="213.0" onMouseClicked="#back_games" prefHeight="122.3" prefWidth="46.0" style="-fx-background-color: #90e0ef;" stylesheets="@../Model/style.css" text="&lt;" textFill="#caf0f8" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Open Sans Bold" size="40.0" />
+         </font>
+         <styleClass>
+            <String fx:value="hover_pointer" />
+            <String fx:value="background_radius" />
+         </styleClass>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="15.0" />
+   </padding>
+</AnchorPane>
